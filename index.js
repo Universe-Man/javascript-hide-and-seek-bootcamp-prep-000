@@ -16,7 +16,7 @@ function increaseRankBy(n) {
     var temp = hopeArray[i].innerHTML;
     var tempNum = parseInt(temp);
     var finalTempNum = (tempNum + m);
-    hopeArray[i].innerHTML = finalTempNum;
+    
   }
 }
 
