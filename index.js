@@ -11,12 +11,12 @@ function nestedTarget() {
 function increaseRankBy(n) {
   var m = parseInt(n);
   const hope = document.getElementById('app').querySelectorAll('ul.ranked-list li');
-  const hopeArray = Array.from(hope);
-  for (let i = 0; i < hopeArray.length; i++) {
-    var temp = hopeArray[i].innerHTML;
+  
+  for (let i = 0; i < hope.length; i++) {
+    var temp = hope[i].innerHTML;
     var tempNum = parseInt(temp);
     var finalTempNum = (tempNum + m);
-
+    hope[i].innerHTML = finalTempNum;
   }
 }
 
