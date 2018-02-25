@@ -12,11 +12,12 @@ function increaseRankBy(n) {
   var m = parseInt(n);
   const hope = document.getElementById('app').querySelectorAll('ul.ranked-list li');
   const hopeArray = Array.from(hope);
-  const hopeArrayNumbers = parseInt(hopeArray);
   for (let i = 0; i < hopeArray.length; i++) {
-    hopeArray[i].innerHTML = (i + m).toString();
+    var temp = hopeArray[i].innerHTML;
+    var tempNum = parseInt(temp);
+    var finalTempNum = (tempNum + m);
+    finalTempNum = temp;
   }
-  return hopeArray;
 }
 
 function deepestChild() {
