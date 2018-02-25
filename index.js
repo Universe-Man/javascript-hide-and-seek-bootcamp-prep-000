@@ -13,7 +13,7 @@ function increaseRankBy(n) {
   const hope = document.getElementById('app').querySelectorAll('ul.ranked-list li');
   for (let i = 0; i < hope.length; i++) {
     var temp = hope[i].innerHTML;
-
+    var tempNum = parseInt(temp);
     var finalTempNum = (tempNum + m);
     hope[i].innerHTML = finalTempNum;
   }
